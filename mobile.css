@@ -3,6 +3,7 @@ body {
     grid-template-columns: 100%;
     grid-template-rows: auto;
     grid-template-areas:
+        "footer"
         "header"
         "main"
         "nav";
@@ -11,11 +12,93 @@ body {
 }
 
 nav {
-    display: block;
-    background-color: yellow;
+    display: none;
+    background-color: rgba(3, 3, 3, 0.774);
     position: fixed;
     top: 0;
     left: 50%;
     width: 50%;
     height: 100vh;
+    animation: move 10s infinite ease-in;
+}
+
+header img {
+    width: 15em;
+    height: 15em;
+    border-radius: 100%;
+    box-shadow: 5px 10px;
+    display: center;
+}
+
+#showNav .on {
+    display: block;
+}
+
+#showNav .off {
+    display: none;
+}
+
+#showNav:target .on {
+    display: none;
+}
+
+#showNav:target .off {
+    display: block;
+}
+
+#showNav:target nav {
+    display: block;
+}
+
+.on {
+    height: 0.8em;
+    width: 1.23em;
+    display: block;
+    border-top: 0.2em solid white;
+    border-bottom: 0.2em solid white;
+}
+
+.on::before {
+    content: "";
+    position: absolute;
+    width: 1.25em;
+    margin-top: 0.3em;
+    border-top: 0.2em solid #fff;
+}
+
+@keyframes move {
+    0% {
+        background-color: rgba(0, 255, 21, 0.096);
+
+    }
+
+    25% {
+        background-color: rgba(255, 255, 0, 0.103);
+    }
+
+    50% {
+        background-color: rgba(253, 80, 0, 0.164);
+    }
+
+    75% {
+        background-color: rgba(255, 1, 1, 0.096);
+    }
+
+    100% {
+        background-color: rgb(0, 255, 21, 0.096);
+    }
+}
+
+.heading1 {
+    font-size: 50px;
+    color: white;
+}
+
+.heading2 {
+    font-size: 25px;
+}
+
+.navhome {
+    font-size: 20px;
+    list-style: none;
 }

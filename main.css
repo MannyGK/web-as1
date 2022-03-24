@@ -18,3 +18,7 @@ nav a {
     text-decoration: none;
     color: white;
 }
+footer{
+    background-color: rgba(127, 255, 212, 0);
+    grid-area: footer;
+}

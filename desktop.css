@@ -3,6 +3,7 @@ body {
     grid-template-columns: 100%;
     grid-template-rows: auto;
     grid-template-areas:
+        "footer"
         "header"
         "main"
         "nav";
@@ -26,7 +27,7 @@ main {
 
 nav {
     height: 10vh;
-    animation: move 10s infinite ease-in ;
+    animation: move 10s infinite ease-in;
 }
 
 header img {
@@ -46,35 +47,47 @@ nav ul {
 
 
 }
-nav li{
+
+nav li {
     color: white;
 }
-@keyframes move{
-    0% { background-color: rgba(0, 255, 21, 0.096) ;
-   
+
+@keyframes move {
+    0% {
+        background-color: rgba(0, 255, 21, 0.096);
+
     }
+
     25% {
         background-color: rgba(255, 255, 0, 0.103);
     }
+
     50% {
         background-color: rgba(253, 80, 0, 0.164);
     }
+
     75% {
         background-color: rgba(255, 1, 1, 0.096);
     }
+
     100% {
-        background-color:rgb(0, 255, 21, 0.096);
+        background-color: rgb(0, 255, 21, 0.096);
     }
-   }
-   
-.heading1{
+}
+
+.heading1 {
     font-size: 50px;
     color: white;
 }
-.heading2{
+
+.heading2 {
     font-size: 25px;
 }
-.navhome{
+
+.navhome {
     font-size: 20px;
     list-style: none;
+}
+.on, .off{
+    display: none;
 }
