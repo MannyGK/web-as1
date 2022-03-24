@@ -1,0 +1,20 @@
+header{
+    background-color: rgba(22, 5, 255, 0);
+    grid-area: header;
+    color: white;
+}
+main{
+    background-color: rgba(1, 181, 236, 0);
+    grid-area: main;
+    color: rgba(255, 255, 255, 0.527);
+}
+nav{
+    background-color: rgba(255, 255, 255, 0);
+    grid-area: nav;
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}

@@ -1,3 +1,11 @@
 body{
-    background-color: blue;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header"
+        "main"
+        "nav";
+        background-image: url(1222214.jpg);
+    
 }
